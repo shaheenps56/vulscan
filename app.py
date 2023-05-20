@@ -8,7 +8,7 @@ from transformers import RobertaTokenizer, RobertaForSequenceClassification
 @st.cache_data #(allow_output_mutation=True)
 def get_model():
     tokenizer = RobertaTokenizer.from_pretrained('roberta-large-mnli')
-    model = RobertaForSequenceClassification.from_pretrained('roberta-large-mnli')
+    model = RobertaForSequenceClassification.from_pretrained('shaheenps56/vulscan')
     return tokenizer,model
 
 tokenizer,model = get_model()
