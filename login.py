@@ -3,7 +3,7 @@ def set_background_image():
     page_bg_img = '''
         <style>
         body {
-            background-image: url("");
+            background-image: url("https://www.novaspect.com/website/media/impact-partner/CyberAsses-HeaderBG.jpg");
             background-size: cover;
             opacity: 0.8; /* Adjust the opacity value between 0 and 1 */
         }
