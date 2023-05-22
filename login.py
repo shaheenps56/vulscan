@@ -1,13 +1,7 @@
 import streamlit as st
-def set_background_image():
-    page_bg_img = '''
-        <style>
-        body {
-            background-image: url("https://www.novaspect.com/website/media/impact-partner/CyberAsses-HeaderBG.jpg");
-            background-size: cover;
-            opacity: 0.8; /* Adjust the opacity value between 0 and 1 */
-        }
-        </style>
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
